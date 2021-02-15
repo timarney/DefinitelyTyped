@@ -6,6 +6,7 @@
 interface Base64 {
     encode: (input: string) => string;
     decode: (input: string) => string;
+    encodeFromByteArray: (input: Uint8Array) => string;
 }
 
 declare const base64: Base64;
